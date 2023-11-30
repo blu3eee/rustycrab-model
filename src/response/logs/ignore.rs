@@ -18,7 +18,7 @@ pub struct RequestUpdateLogIgnoreChannel {}
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ResponseLogIgnoreChannel {
     pub id: i32,
-    pub log_setting_id: Option<i32>,
+    pub log_setting_id: i32,
     pub channel_id: String,
 }
 
@@ -34,6 +34,6 @@ pub struct RequestUpdateLogIgnoreRole {}
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ResponseLogIgnoreRole {
     pub id: i32,
-    pub log_setting_id: Option<i32>,
+    pub log_setting_id: i32,
     pub role_id: String,
 }

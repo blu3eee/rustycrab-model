@@ -18,7 +18,7 @@ pub struct RequestUpdateActionLog {
 pub struct ResponseActionLog {
     pub id: i32,
     pub channel_id: String,
-    pub bot_id: Option<i32>,
-    pub guild_id: Option<i32>,
+    pub bot_id: i32,
+    pub guild_id: i32,
     pub events: String,
 }

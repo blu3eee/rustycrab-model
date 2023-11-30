@@ -29,13 +29,13 @@ pub struct RequestUpdateTicketSetting {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ResponseTicketSetting {
     pub id: i32,
+    pub bot_id: i32,
+    pub guild_id: i32,
     pub per_user_ticket_limit: i32,
     pub allow_user_to_close_tickets: bool,
     pub ticket_close_confirmation: bool,
     pub ticket_notification_channel: Option<String>,
     pub transcripts_channel: Option<String>,
-    pub bot_id: i32,
-    pub guild_id: i32,
     pub thread_ticket: bool,
     pub archive_category: Option<String>,
     pub archive_overflow_category: Option<String>,

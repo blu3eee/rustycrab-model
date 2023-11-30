@@ -44,17 +44,17 @@ pub struct RequestUpdateTicketPanel {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ResponseTicketPanel {
     pub id: i32,
+    pub bot_id: i32,
+    pub guild_id: i32,
+    pub message_id: i32,
     pub mention_on_open: Vec<String>,
+    pub welcome_message_id: i32,
     pub naming_scheme: String,
     pub channel_id: String,
     pub sent_message_id: String,
-    pub bot_id: i32,
-    pub guild_id: i32,
-    pub message_id: Option<i32>,
-    pub button_id: Option<i32>,
-    pub welcome_message_id: Option<i32>,
-    pub support_team_id: Option<i32>,
+    pub button_id: i32,
     pub ticket_category: String,
+    pub support_team_id: Option<i32>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]

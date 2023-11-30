@@ -17,9 +17,9 @@ pub struct RequestUpdateTicketSupportTeam {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ResponseTicketSupportTeam {
     pub id: i32,
+    pub bot_id: i32,
+    pub guild_id: i32,
     pub name: String,
     pub roles: Vec<String>,
     pub users: Vec<String>,
-    pub bot_id: i32,
-    pub guild_id: i32,
 }

@@ -12,8 +12,8 @@ pub struct RequestCreateConfig {
 pub struct RequestUpdateConfig {
     pub prefix: Option<String>,
     pub locale: Option<String>,
-    pub bot_id: Option<i32>,
-    pub guild_id: Option<i32>,
+    pub bot_id: i32,
+    pub guild_id: i32,
     pub module_flags: Option<i32>,
     pub premium_flags: Option<i32>,
 }
@@ -23,8 +23,8 @@ pub struct ResponseGuildConfig {
     pub id: i32,
     pub prefix: String,
     pub locale: String,
-    pub bot_id: Option<i32>,
-    pub guild_id: Option<i32>,
+    pub bot_id: i32,
+    pub guild_id: i32,
     pub module_flags: i32,
     pub premium_flags: i32,
 }

@@ -19,6 +19,6 @@ pub struct ResponseBotUser {
     pub balance: i32,
     pub pray_points: i32,
     pub inventory: String,
-    pub bot_id: Option<i32>,
-    pub user_id: Option<i32>,
+    pub bot_id: i32,
+    pub user_id: i32,
 }

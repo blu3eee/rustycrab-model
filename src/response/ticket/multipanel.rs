@@ -10,20 +10,20 @@ use super::panel::ResponseTicketPanel;
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ResponseTicketMultiPanel {
     pub id: i32,
-    pub channel_id: String,
-    pub sent_message_id: String,
     pub bot_id: i32,
     pub guild_id: i32,
-    pub message_id: Option<i32>,
+    pub channel_id: String,
+    pub message_id: i32,
+    pub sent_message_id: String,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ResponseTicketMultiPanelDetails {
     pub id: i32,
-    pub channel_id: String,
-    pub sent_message_id: String,
     pub bot: ResponseBot,
     pub guild: ResponseGuild,
+    pub channel_id: String,
+    pub sent_message_id: String,
     pub message: Option<ResponseMessageDetails>,
     pub panels: Vec<ResponseTicketPanel>,
 }

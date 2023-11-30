@@ -23,8 +23,8 @@ pub struct ResponseGuildWelcome {
     pub id: i32,
     pub enabled: i8,
     pub channel_id: Option<String>,
-    pub bot_id: Option<i32>,
-    pub guild_id: Option<i32>,
+    pub bot_id: i32,
+    pub guild_id: i32,
     pub message_id: Option<i32>,
 }
 

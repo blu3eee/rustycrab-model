@@ -12,7 +12,7 @@ pub struct ResponseAutoRes {
     pub trigger: String,
     pub bot_id: i32,
     pub guild_id: i32,
-    pub response_id: Option<i32>,
+    pub response_id: i32,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
