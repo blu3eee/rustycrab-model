@@ -10,10 +10,10 @@ pub struct RequestCreateConfig {
 
 #[derive(Serialize, Deserialize, Debug, Clone, Default)]
 pub struct RequestUpdateConfig {
-    pub prefix: Option<String>,
-    pub locale: Option<String>,
     pub bot_id: i32,
     pub guild_id: i32,
+    pub prefix: Option<String>,
+    pub locale: Option<String>,
     pub module_flags: Option<i32>,
     pub premium_flags: Option<i32>,
 }
