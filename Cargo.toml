@@ -1,5 +1,5 @@
 [package]
-name = "here"
+name = "rustycrab-model"
 version = "0.1.0"
 edition = "2021"
 
