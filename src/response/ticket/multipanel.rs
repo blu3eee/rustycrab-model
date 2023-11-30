@@ -22,10 +22,10 @@ pub struct ResponseTicketMultiPanelDetails {
     pub id: i32,
     pub bot: ResponseBot,
     pub guild: ResponseGuild,
+    pub message: ResponseMessageDetails,
+    pub panels: Vec<ResponseTicketPanel>,
     pub channel_id: String,
     pub sent_message_id: String,
-    pub message: Option<ResponseMessageDetails>,
-    pub panels: Vec<ResponseTicketPanel>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
