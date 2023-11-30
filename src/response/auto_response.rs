@@ -29,7 +29,7 @@ pub struct RequestCreateAutoResponse {
     pub bot_discord_id: String,
     pub guild_discord_id: String,
     pub trigger: String,
-    pub response_data: Option<RequestCreateUpdateMessage>,
+    pub response_data: RequestCreateUpdateMessage,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, Default)]
